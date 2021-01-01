@@ -16,7 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from website.views import home, rates, summitGrill, info
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', home)
+    path('home', home),
+    path('rates', rates),
+    path('SummitGrill', summitGrill),
+    path('info', info),
 ]
